@@ -1,0 +1,22 @@
+<<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+  		body{
+  			background-image:url("{% static "images/Backimage2.jpg"%}");
+  		}
+      </style>
+  </head>
+  <body>
+    <h1> Movies you might like </h1>
+    <ul>
+      {% for anss in ans|safeseq %}
+      <li>{{ anss }}</li>
+      {% endfor %}
+    </ul>
+    <br><br>
+    <a href="{% url 'home' %}">Return Home</a>
+  </body>
+</html>
