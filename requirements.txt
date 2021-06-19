@@ -5,7 +5,6 @@ gunicorn==20.1.0
 joblib==1.0.1
 numpy==1.20.3
 pandas==1.2.4
-psycopg2 @ file:///C:/ci/psycopg2_1612298766762/work
 python-dateutil==2.8.1
 scikit-learn==0.24.2
 scipy==1.6.3
