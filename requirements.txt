@@ -1,4 +1,4 @@
-asgiref @ file:///tmp/build/80754af9/asgiref_1617740417847/work
+#asgiref @ file:///tmp/build/80754af9/asgiref_1617740417847/work
 certifi==2020.12.5
 Django @ file:///tmp/build/80754af9/django_1617740316746/work
 Faker==8.1.4
