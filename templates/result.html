@@ -4,19 +4,24 @@
   <head>
     <meta charset="utf-8">
     <style>
+  a:hover {
+  color: red;
+}
   		body{
   			background-image:url("{% static "images/Backimage2.jpg"%}");
   		}
       </style>
   </head>
   <body>
-    <h1> Movies you might like </h1>
+    <h1 style="color:	#8000ff;background-color:black;opacity:0.6;text-align:center;font-size:45px"> Movies you might like </h1>
+    <div style="color:white;background-color:black;opacity:0.6;">
     <ul>
       {% for anss in ans|safeseq %}
-      <li>{{ anss }}</li>
+      <li style="text-align:center;font-size: 40px;">{{ anss }}</li>
       {% endfor %}
     </ul>
     <br><br>
-    <a href="{% url 'home' %}">Return Home</a>
+    <a href="{% url 'home' %}" style="font-size:30px;opacity:0.99;">Return Home</a>
+    </div>
   </body>
 </html>
